@@ -14,7 +14,7 @@ st.title("Clustering Time Series with Nonlinear Dynamics ♓")
 with st.form("form"):
     uploaded_files = st.file_uploader("Upload your spike data in pickle format with extension .p", accept_multiple_files=True)
 
-    iter = st.slider('Number of iterations', 1, 100, 1)
+    iter = st.slider('Number of iterations', 1, 100000, 1)
 
     st.info('Larger numbers would increase accuracy but would significantly increase processing time', icon="ℹ️")
     
