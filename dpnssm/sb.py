@@ -42,6 +42,9 @@ def infer_dp(
     num_accept = 0
     num_total = 0
 
+    if not os.path.exists(out_prefix):
+        os.makedirs(out_prefix)
+
     if out_prefix is not None:
         with open(out_prefix + "_assigns.csv", "w") as fassign:
             fassign.write("")
